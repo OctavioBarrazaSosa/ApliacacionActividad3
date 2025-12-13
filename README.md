@@ -37,3 +37,5 @@ Ejecutar en emulador o dispositivo físico
 | action     | text     |
 | created_at | text     |
 | details    | text     |
+
+Capturas de pantalla
