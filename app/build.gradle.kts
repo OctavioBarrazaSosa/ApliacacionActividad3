@@ -1,0 +1,61 @@
+plugins {
+    alias(libs.plugins.android.application)
+
+}
+
+android {
+    namespace = "com.example.aplicacionactividad3"
+    compileSdk {
+        version = release(36)
+    }
+
+    defaultConfig {
+        applicationId = "com.example.aplicacionactividad3"
+        minSdk = 24
+        targetSdk = 36
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    implementation(libs.activity)
+    implementation(libs.constraintlayout)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
+
+    val room_version = "2.6.1"
+    val lifecycle_version = "2.6.2"
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.0")
+
+ //ROOM
+
+    implementation("androidx.room:room-runtime:$room_version")
+
+    annotationProcessor("androidx.room:room-compiler:$room_version")    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version")
+
+    implementation("androidx.lifecycle:lifecycle-livedata:$lifecycle_version")
+
+    annotationProcessor("androidx.lifecycle:lifecycle-compiler:$lifecycle_version")
+
+}

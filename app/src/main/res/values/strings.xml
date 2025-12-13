@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AplicacionActividad3</string>
+
+    <string-array name="action_types">
+        <item>Todos los tipos</item>
+        <item>insert_task</item>
+        <item>update_task</item>
+        <item>delete_task</item>
+    </string-array>
+</resources>
