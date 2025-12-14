@@ -8,20 +8,20 @@ El sistema permite consultar un historial de acciones como creación, actualizac
 eliminación de registros, mostrando información relevante como el tipo de acción, la
 fecha de ejecución y un detalle del registro afectado.
 
-## 🛠️ Tecnologías utilizadas
+##  Tecnologías utilizadas
 - Android Studio
 - Java
 - Room (SQLite)
 - RecyclerView
 - Arquitectura MVC
 
-## 📋 Funcionalidades
+##  Funcionalidades
 - Registro automático de acciones CRUD
 - Consulta completa del historial
 - Filtro de historial por fecha o tipo de acción
 - Persistencia de datos con Room
 
-## ⚙️ Instalación y ejecución
+##  Instalación y ejecución
 1. Clonar el repositorio:
 ```bash
 git clone https://github.com/OctavioBarrazaSosa/AplicacionActividad3
