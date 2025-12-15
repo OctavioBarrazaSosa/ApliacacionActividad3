@@ -38,4 +38,4 @@ Ejecutar en emulador o dispositivo físico
 | created_at | text     |
 | details    | text     |
 
-Capturas de pantalla
+
